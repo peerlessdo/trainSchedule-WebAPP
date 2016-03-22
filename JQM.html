@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
+</head>
+<body>
+	<div data-role="page" id="index">
+		<div data-role="header">
+			<h1>标题</h1>
+		</div>
+		<div role="main" class="ui-content">
+			<p>内容</p>
+			<a href="#index2" data-transition="flip">index2</a>
+			<a class="ui-btn ui-btn-inline ui-btn-a ui-corner-all">a按钮</a>
+			<a class="ui-btn ui-btn-inline ui-btn-b ui-shadow">a按钮</a>
+			<a class="ui-btn ui-btn-inline ui-shadow">a按钮</a>
+			<button>button按钮</button>
+			<input type="submit" value="input按钮"></input>
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#">
+					<h2>G1次</h2>
+					<p>北京南-上海虹桥</p>
+					<p>用时：4：48</p>
+					<p class="ui-li-aside">09：09：09开</p>
+				</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+			</ul>
+
+			<form>
+				<div class="ui-field-contain">
+					<label>发车站</label><input type="text"></input>
+				</div>
+				<div class="ui-field-contain">
+					<label>到达站</label><input type="text"></input>
+				</div>
+				<div class="ui-field-contain">
+					<label>车次</label><input type="text"></input>
+				</div>
+			</form>
+
+			<table data-role="table" data-mode="reflow" class="ui-responsive table-stroke">
+				<thead>
+					<tr>
+						<th>第一列</th>
+						<th>第二列</th>
+						<th>第三列</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>132</td>
+						<td>13gdh</td>
+						<td>1wsr2</td>
+					</tr>
+					<tr>
+						<td>132</td>
+						<td>13gdh</td>
+						<td>1wsr2</td>
+					</tr>
+					<tr>
+						<td>132</td>
+						<td>13gdh</td>
+						<td>1wsr2</td>
+					</tr>
+				</tbody>
+			</table>
+
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<h1>页脚</h1>
+			<div data-role="navbar">
+				<ul>
+					<li>111</li>
+					<li>222</li>
+					<li>333</li>
+					<li>111</li>
+					<li>222</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div data-role="page" id="index2">
+		<div data-role="header">
+			<h1>标题2</h1>
+		</div>
+		<div role="main" class="ui-content">
+			<p>内容2</p>
+			<a href="#index" data-transition="flip">index</a>
+		</div>
+		<div data-role="footer">
+			<h1>页脚2</h1>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+
+<!-- 	<script type="text/javascript">
+	$(document).on("pagebeforecreate", function(){
+		alert("pagebeforecreate");
+	});
+	$(document).on("pagecreate", function(){
+		alert("pagecreate");
+	});
+	$(document).on("pageinit", function(){
+		alert("pageinit");
+	})
+
+	$(document).on("pagebeforehide","#index", function(){
+		alert("pagebeforehide");
+	});
+	$(document).on("pagehide","#index", function(){
+		alert("pagehide");
+	});
+	$(document).on("pagebeforeshow","#index2", function(){
+		alert("pagebeforeshow");
+	});
+	$(document).on("pageshow","#index2", function(){
+		alert("pageshow");
+	});
+</script> -->
+</body>
+</html>
